@@ -1,12 +1,12 @@
 "use strict";
 const express = require("express");
 const router = express.Router();
-const kafka = require("../../kafka/client");
+// const kafka = require("../../kafka/client");
 const { STATUS_CODE, MESSAGES } = require("../../utils/constants");
 const User = require("../../models/userModel");
 const Chat = require("../../models/chatModel");
 const mongoose = require("mongoose");
-const redisClient = require("../../utils/redisConfig");
+// const redisClient = require("../../utils/redisConfig");
 
 router.post("/sendmessage", async (req, res) => {
     let msg = req.body;

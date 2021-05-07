@@ -1,7 +1,7 @@
 "use strict";
 const express = require("express");
 const router = express.Router();
-const kafka = require("../../kafka/client");
+// const kafka = require("../../kafka/client");
 const { STATUS_CODE } = require("../../utils/constants");
 
 router.post("/sendmessage", async (req, res) => {
